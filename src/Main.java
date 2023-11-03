@@ -20,14 +20,14 @@ public class Main {
 
         System.out.println("Guess a number between 0-20: ");
         userGuess = s.nextInt();
-        while (20<userGuess && userGuess < 0){
+        while (20 < userGuess || userGuess < 0){ //Why won't work?
             System.out.println("Guess a number between 0-20: ");
             userGuess = s.nextInt();
         }
 
         while (turnsLeft > 0 && !gameWon){
             if (userGuess == goalNum){
-                System.out.println("Congrats, you guessed it in " + turnsLeft + " turns!");
+                System.out.println("Congrats, you guessed it in " + (10 -  turnsLeft) + " turns!");
                 gameWon = true;
             }
             else {
