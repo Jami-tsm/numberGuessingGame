@@ -20,7 +20,7 @@ public class Main {
 
         System.out.println("Guess a number between 0-20: ");
         userGuess = s.nextInt();
-        while (20 < userGuess || userGuess < 0){ //Why won't work?
+        while (20 < userGuess || userGuess < 0){ 
             System.out.println("Guess a number between 0-20: ");
             userGuess = s.nextInt();
         }
